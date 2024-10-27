@@ -1,0 +1,85 @@
+.hidden {
+  display: none;
+}
+
+body {
+  background-image: url('https://i.imgur.com/SxzomdE.png'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 50px;
+  height: 100vh; 
+  font-family: 'Press Start 2P', cursive; /* Applying the new font */
+}
+
+#level-selection, #game-page, #game-over {
+  text-align: center;
+  padding: 20px;
+}
+
+.level-buttons {
+  margin-top: 20px;
+}
+
+.level-btn {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 24px; 
+  cursor: pointer;
+  border: none; /* No border for a cleaner look */
+  background-color: #f5f2eb; /* Button background */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.level-btn:hover {
+  background-color: #fde5b4; /* Change color on hover */
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#word-list, #definition-list {
+  margin: 0 20px;
+}
+
+h2 {
+  font-size: 36px; 
+  font-weight: bold; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  text-align: center; 
+  color: #fff; 
+}
+
+.word-box, .definition-box {
+  padding: 20px; 
+  margin: 10px; 
+  background-color: #f5f2eb; 
+  cursor: pointer;
+  font-size: 24px; 
+}
+
+#lives, #score {
+  font-size: 34px; 
+  margin: 10px 0; 
+  color: #fff;
+}
+
+#feedback {
+  margin-top: 20px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+#game-over {
+  font-size: 40px;
+}
+
+.selected {
+  background-color: #fde5b4; 
+  border: 2px solid #000;  
+}

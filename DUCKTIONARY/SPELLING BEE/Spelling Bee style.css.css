@@ -1,0 +1,95 @@
+/* Import Google Font for gamification */
+body, h1, h2, .level-btn, #submit-btn, #hint-btn, #play-button, #next-btn, #answer-box {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.container {
+    text-align: center;
+    margin: 20px;
+}
+
+.level-btn, .play-btn, #submit-btn, #hint-btn, #next-btn {
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffe600;
+    color: #000;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+#feedback.correct {
+    color: green;
+    font-weight: bold;
+}
+
+#feedback.wrong {
+    color: red;
+    font-weight: bold;
+}
+
+#feedback, #hint-message {
+    font-size: 18px;
+}
+
+.duck-box {
+    background-image: url('https://i.imgur.com/YnoD2c1.png');
+    background-size: contain;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+body {
+    background-image: url('https://i.imgur.com/SxzomdE.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 50px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.5rem;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    color: #000000;  
+    margin: 25px 0;
+    font-size: 3.0rem;
+    background-color: #d9ecfa;
+}
+
+#lives, #score {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #333;
+}
+
+#answer-box {
+    font-size: 18px;
+    color: #0000ff;
+    padding: 10px;
+    width: 25%;
+    max-width: 400px;
+    margin: 15px auto;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}

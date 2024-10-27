@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - WM</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Match Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> <!-- Added Font -->
+</head>
+<body>
+  <!-- Level Selection Page -->
+  <div id="level-selection">
+    <h1>WORD MATCH GAME</h1>
+    <h2>Select a Difficulty Level</h2>
+    <div class="level-buttons">
+      <button class="level-btn" onclick="startGame('easy')">EASY</button>
+      <button class="level-btn" onclick="startGame('intermediate')">INTERMEDIATE</button>
+      <button class="level-btn" onclick="startGame('hard')">HARD</button>
+    </div>
+  </div>
+
+  <!-- Game Page -->
+  <div id="game-page" class="hidden">
+    <h2>Match the Words to Their Definitions</h2>
+    <div class="game-container">
+      <div id="word-list" class="word-list">
+        <!-- Words will appear here -->
+      </div>
+      <div id="definition-list" class="definition-list">
+        <!-- Definitions will appear here -->
+      </div>
+    </div>
+    <div id="feedback"></div>
+    <p id="lives">Lives: <span id="life-count">3</span></p>
+    <p id="score">Score: <span id="score-count">0</span></p>
+  </div>
+
+<!-- Game Over Screen -->
+<div id="game-over" class="hidden">
+    <h2>Game Over!</h2>
+    <p id="final-score"></p>
+    <button onclick="backToMenu()">Back to Menu</button>
+    <button onclick="window.location.href='https://codepen.io/nazirah/full/rNXpGxW'">Back to Homepage</button> <!-- Redirects to homepage -->
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
